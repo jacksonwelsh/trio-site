@@ -1,4 +1,9 @@
+import blogs from './content/blogs.json'
+
 export default {
+  generate: {
+    routes: [].concat(blogs.map((blog) => `/blog/${blog.slug}`)),
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -39,5 +44,16 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extend(config, ctx) {
+      // Add this to your build config
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        options: {
+          vue: true,
+        },
+      })
+    },
+  },
 }
