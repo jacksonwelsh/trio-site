@@ -43,4 +43,6 @@ collections:
         name: 'about'
         file: 'content/about.md'
         fields:
+          - { label: Title, name: title, widget: string, required: true }
+          - { label: Header Image, name: img, widget: image, required: true }
           - { label: Page Content, name: body, widget: markdown, required: true }

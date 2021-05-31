@@ -1,6 +1,7 @@
 <template>
   <div>
-    {{ pageData }}
+    <title-card :img="pageData.img">{{ pageData.title }}</title-card>
+
   </div>
 </template>
 
