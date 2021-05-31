@@ -1,9 +1,18 @@
+import blogs from './content/blogs.json'
+
 export default {
+  generate: {
+    routes: [].concat(blogs.map((blog) => `/blog/${blog.slug}`)),
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  server: {
+    host: '0.0.0.0'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -23,7 +32,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ["@/plugins/vue-lazyload"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -39,5 +48,16 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extend(config, ctx) {
+      // Add this to your build config
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        options: {
+          vue: true,
+        },
+      })
+    },
+  },
 }
