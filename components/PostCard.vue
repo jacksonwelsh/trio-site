@@ -13,15 +13,18 @@
           transition-colors
         "
       >
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
-          <div>
-            <h2 class="text-2xl font-bold">{{ postInfo.attributes.title }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div class="h-full">
+            <h3 class="text-2xl font-bold">{{ postInfo.attributes.title }}</h3>
             <p>
               {{ postInfo.attributes.summary }}
             </p>
           </div>
-          <div class="flex w-full justify-center lg:justify-end">
-            <img :src="postInfo.attributes.thumbnail" class="rounded-lg max-h-full h-48" />
+          <div class="flex w-full justify-center md:justify-end">
+            <img
+              :src="postInfo.attributes.thumbnail"
+              class="rounded-lg max-h-full h-48"
+            />
           </div>
         </div>
       </div>

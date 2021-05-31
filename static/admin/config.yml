@@ -4,6 +4,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
+site_url: https://trio.jacksonwel.sh
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -13,13 +14,7 @@ collections:
     sort: 'date:desc'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - {
-          label: Summary 164-220,
-          name: summary,
-          widget: text,
-          required: true,
-          pattern: ['.{164,220}', 'Must be within 164 and 220 characters'],
-        }
+      - { label: Summary, name: summary, widget: text, required: true }
       - { label: 'Publish Date', name: 'date', widget: 'date', required: true }
       - {
           label: 'Updated Date',
@@ -41,3 +36,11 @@ collections:
           required: true,
         }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+  - name: 'pages'
+    label: 'CMS Pages'
+    files:
+      - label: 'About Page'
+        name: 'about'
+        file: 'content/about.md'
+        fields:
+          - { label: Page Content, name: content, widget: markdown, required: true }

@@ -1,8 +1,8 @@
 <template>
   <main class="container mx-auto mt-3">
-    <title-card title="The Peace River Trio" image="trio_banner.jpeg" />
-    <h2 class="text-3xl font-bold mt-4">News & Upcoming Events</h2>
-    <section class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <title-card title="Blog" image="blog_banner.jpeg" />
+    <h2 class="text-3xl font-bold mt-4">Recent Posts</h2>
+    <section class="grid grid-cols-1 gap-4">
       <PostCard
         v-for="(blog, index) in blogList"
         :key="index"

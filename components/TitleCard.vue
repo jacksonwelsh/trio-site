@@ -1,8 +1,8 @@
 <template>
   <div class="bg-black rounded-4xl">
     <img
-      class="rounded-4xl w-full gradient-mask-b-50% bg-yellow-500 bg-clip-border"
-      :src="`/images/uploads/${image}`"
+      class="rounded-4xl w-full gradient-mask-b-50% h-1/3 bg-gray-900"
+      v-lazy="`/images/uploads/${image}`"
     />
     <h1
       class="
@@ -17,7 +17,7 @@
         text-gray-100
       "
     >
-      The Peace River Trio
+      {{ title }}
     </h1>
   </div>
 </template>
