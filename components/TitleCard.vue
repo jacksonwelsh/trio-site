@@ -1,8 +1,9 @@
 <template>
   <div class="bg-black rounded-4xl">
-    <img
-      class="rounded-4xl w-full gradient-mask-b-50% h-1/3 bg-gray-900"
-      v-lazy="`/images/uploads/${image}`"
+    <div
+      class="rounded-4xl w-full gradient-mask-b-50% h-96 bg-gray-900 bg-cover bg-center"
+      :style="`background-image: url(${image})`"
+      v-lazy="image"
     />
     <h1
       class="
@@ -13,7 +14,8 @@
         text-6xl
         font-bold
         mt-auto
-        ml-6
+        md:ml-4
+        px-2
         text-gray-100
       "
     >

@@ -1,6 +1,6 @@
 <template>
   <main class="container mx-auto mt-3">
-    <title-card image="blog_banner.jpeg">Blog</title-card>
+    <title-card image="/images/uploads/blog_banner.jpeg">Blog</title-card>
     <h2 class="text-3xl font-bold mt-4">Recent Posts</h2>
     <section class="grid grid-cols-1 gap-4">
       <PostCard
