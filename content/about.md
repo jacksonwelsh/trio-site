@@ -3,43 +3,11 @@ content: This is the about page. Yay!
 title: About
 img: /images/uploads/trio_banner.jpeg
 ---
-Ahoy! This is the content for the about page. Let's make sure everything works right.
 
-**Here is some bold text.**
+The Peace River Trio is a musical tribute to the great Folk Music artists of the ‘50s, ‘60s and ‘70s. Sing along to the music made famous by Peter Paul and Mary, the Kingston Trio, Joan Baez, Ian & Sylvia, John Denver, the New Christy Minstrels, and many more!
 
-*Here is some italicized text.*
+![John Welsh, Marsha Carpenter, and Dave Heveron](/images/uploads/blog-banner.jpeg)
 
-`Here is some code`
+These three local musicians jammed together for several years before deciding they wanted to form a trio to share some great Folk music with others who remember when music was really, really good!
 
-[A link.](https://google.com)
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-* bulleted
-* list
-* of
-* things
-
-1. Numbered
-2. List
-3. of 
-4. important
-5. items
-
-![](/images/uploads/_u-https-3a-2f-2fwallpapertag.jpg)
-
-```
-code .
-this is a code block
-haha yes
-```
+This is the music you remember, with lyrics you can understand and melodies you can sing along with... which we encourage our audiences to do!

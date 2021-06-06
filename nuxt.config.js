@@ -11,7 +11,7 @@ export default {
   target: 'static',
 
   server: {
-    host: '0.0.0.0'
+    host: '0.0.0.0',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -32,7 +32,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["@/plugins/vue-lazyload"],
+  plugins: ['@/plugins/vue-lazyload'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -58,6 +58,22 @@ export default {
           vue: true,
         },
       })
+    },
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true,
+      },
     },
   },
 }
