@@ -1,6 +1,9 @@
 <template>
   <div
-    :class="`flex items-center justify-center bg-gradient-to-tr text-center font-bold px-4 py-3 rounded-lg from-${color}-300 to-${color}-400 text-${color}-900 transform transition-all cursor-default hover:scale-110 xl:hover:scale-105`"
+    :class="[
+      'flex items-center justify-center bg-gradient-to-tr text-center font-bold px-4 py-3 rounded-lg transform transition-all cursor-default hover:scale-110 xl:hover:scale-105',
+      color,
+    ]"
   >
     {{ songTitle }}
   </div>
@@ -20,13 +23,13 @@ export default {
   },
   data() {
     const colors = [
-      'red',
-      'yellow',
-      'green',
-      'blue',
-      'indigo',
-      'purple',
-      'pink',
+      ['from-red-300', 'to-red-400', 'text-red-900'],
+      ['from-yellow-300', 'to-yellow-400', 'text-yellow-900'],
+      ['from-green-300', 'to-green-400', 'text-green-900'],
+      ['from-blue-300', 'to-blue-400', 'text-blue-900'],
+      ['from-indigo-300', 'to-indigo-400', 'text-indigo-900'],
+      ['from-purple-300', 'to-purple-400', 'text-purple-900'],
+      ['from-pink-300', 'to-pink-400', 'text-pink-900'],
     ]
     const color = colors[this.songIndex % colors.length]
     return { color }
