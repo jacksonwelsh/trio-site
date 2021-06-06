@@ -7,7 +7,8 @@
       content-center
       items-center
       justify-between
-      px-4
+      xl:px-4
+      sm:px-2
       font-semibold
       text-lg
     "
