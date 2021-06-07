@@ -5,7 +5,6 @@
         class="
           w-full
           p-4
-          my-4
           rounded-lg
           border-2 border-gray-800
           bg-gray-800

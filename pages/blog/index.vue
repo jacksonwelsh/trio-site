@@ -2,7 +2,7 @@
   <main class="container mx-auto mt-3">
     <title-card image="/images/uploads/blog_banner.jpeg">Blog</title-card>
     <h2 class="text-3xl font-bold mt-4">Recent Posts</h2>
-    <section class="grid grid-cols-1 gap-4">
+    <section class="grid grid-cols-1 gap-4 my-4">
       <PostCard
         v-for="(blog, index) in blogList"
         :key="index"
@@ -35,7 +35,7 @@ export default {
       blogs.map((blog) => awaitImport(blog))
     ).then((res) => {
       return {
-        blogList: res,
+        blogList: res.slice(0, 5),
       }
     })
 
