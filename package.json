@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.24.2",
-    "core-js": "^3.9.1",
+    "core-js": "^3.14.0",
     "front-matter-markdown": "^0.4.5",
     "frontmatter-markdown-loader": "^3.6.2",
     "nuxt": "^2.15.3",
