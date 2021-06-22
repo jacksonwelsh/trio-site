@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'flex items-center justify-center bg-gradient-to-tr text-center font-bold px-4 py-3 rounded-lg transform transition-all cursor-default hover:scale-110 xl:hover:scale-105',
+      'flex items-center justify-center bg-gradient-to-tr text-center font-bold px-4 py-3 rounded-lg transform transition-all cursor-default',
       color,
     ]"
   >
