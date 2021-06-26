@@ -11,12 +11,12 @@
 
       <!-- This centers the image and spaces out the names under the image -->
       <div class="flex justify-center">
-        <div>
+        <div class="lg:w-2/3">
           <!-- Replace the URL in the src="" section to change the image -->
           <img
             alt="John Welsh, Marsha Carpenter, and Dave Heveron"
             class="rounded-lg"
-            src="/images/uploads/blog-banner.jpeg"
+            src="/images/gallery/004.jpeg"
           />
           <div class="flex justify-between">
             <span>John Welsh</span>
@@ -38,8 +38,8 @@
         do!
       </p>
 
-      <h2 class="text-center font-semibold text-xl">
-        Songs we've played include:
+      <h2 class="text-center font-semibold text-2xl">
+        Our audiences enjoy and sing along with the trio:
       </h2>
       <div
         class="
@@ -60,8 +60,10 @@
           :song-index="index"
         />
       </div>
-
-      <h2 class="text-center font-semibold text-xl">
+      <p class="text-center font-bold py-2 text-xl">
+        ...And many, many, more of your favorite folk songs!
+      </p>
+      <h2 class="text-center font-semibold text-2xl">
         What people are saying:
       </h2>
 
@@ -93,14 +95,20 @@ export default {
 
     const data = await awaitImport()
     const songs = [
-      'Puff the Magic Dragon',
-      'Today',
+      'Puff the Magic Dagon',
       'Tom Dooley',
-      "Everybody's Talking",
-      'The Last Thing on My Mind',
+      'Today',
       'Jamaica Farewell',
       'If I Had a Hammer',
-      'The Night They Drove Old Dixie Down',
+      'The Last Thing on My Mind',
+      'The Night They Drove Ole Dixie Down',
+      'Where Have All the Flowers Gone',
+      'Sixteen Tons',
+      'Folsom Prison',
+      'The Boxer',
+      'Midnight Special',
+      'Leaving on a Jet Plane',
+      "I'd Like To Teach the World To Sing",
     ]
 
     const testimonials = [

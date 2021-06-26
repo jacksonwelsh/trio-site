@@ -9,8 +9,11 @@ module.exports = {
       borderRadius: {
         '4xl': '2.25rem',
       },
-      height: theme => ({
-        'fit': 'calc(100vh - 48px - 1.5rem)'
+      height: (theme) => ({
+        fit: 'calc(100vh - 48px - 1.5rem)',
+        half: '50vh',
+        '3/4vh': '75vh',
+        '128': '32rem',
       }),
     },
   },

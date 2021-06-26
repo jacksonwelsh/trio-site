@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:h-96 h-fit pb-6 pt-2 sm:py-0">
+  <div class="h-96 md:h-half lg:h-3/4vh pb-6 pt-2 sm:py-0">
     <div class="bg-black rounded-4xl h-full">
       <div
         class="

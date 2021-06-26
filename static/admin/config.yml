@@ -3,7 +3,7 @@ backend:
   branch: master
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
-site_url: https://trio.jacksonwel.sh
+site_url: https://peacerivertrio.com
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -42,6 +42,52 @@ collections:
         name: 'about'
         file: 'content/about.md'
         fields:
-          - { label: Title, name: title, widget: string, required: true }
-          - { label: Header Image, name: img, widget: image, required: true }
-          - { label: Page Content, name: body, widget: markdown, required: true }
+          - label: Title
+            name: title
+            widget: string
+            required: true
+          - label: Header Image
+            name: img
+            widget: image
+            required: true
+          - label: Page Content
+            name: body
+            widget: markdown
+            required: true
+      - label: 'Events'
+        name: 'events'
+        file: 'content/events.md'
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: true
+          - label: Header Image
+            name: img
+            widget: image
+            required: true
+          - label: Events
+            name: events
+            widget: list
+            required: true
+            fields:
+              - label: Name
+                name: name
+                widget: string
+                required: true
+              - label: Location
+                name: Location
+                widget: string
+                required: true
+              - label: Image
+                name: image
+                widget: image
+                required: false
+              - label: Date/Time
+                name: date
+                widget: datetime
+                required: true
+              - label: Description
+                name: description
+                widget: markdown
+                required: true

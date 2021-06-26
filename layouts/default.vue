@@ -14,6 +14,7 @@
         items-center
         justify-between
         px-4
+        mt-4
         text-gray-300
       "
     >
